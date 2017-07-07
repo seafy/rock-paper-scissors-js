@@ -1,7 +1,6 @@
 var btn = document.getElementById("play");
 btn.onclick  = jeu;
 
-
 function jeu  () {
 
 var joueur = prompt("pierre feuille ou ciseaux?");
@@ -23,11 +22,15 @@ else {
   ordi = "ciseaux";
 }
 
-console.log(resultjoueur + joueur);
-console.log("Le choix ordi est :" + ordi);
+alert(resultjoueur + joueur);
+alert("Le choix ordi est :" + ordi);
+
+
+
 
 
 switch (joueur) { 
+
   case "pierre":
     if (ordi == "pierre") {//joueur choisie pierre et ordi :pierre
       alert("égaliter !");
@@ -41,6 +44,7 @@ switch (joueur) {
     }
     break;
  
+
   case "feuille": 
     if (ordi == "pierre") {
       alert("vous avez gagner !");

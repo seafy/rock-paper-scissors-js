@@ -117,7 +117,7 @@ body {
   position: relative;
   animation-name: gamer;
   animation-duration: 5s;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
   animation-direction: alternate;  
 }
 
@@ -139,8 +139,8 @@ body {
   width: 10%;
   position: relative;
   animation-name: terminator;
-  animation-duration: 5s;
-  animation-iteration-count: 3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
   animation-direction: alternate; 
 }
 
@@ -152,10 +152,13 @@ body {
 }
 
 @keyframes terminator {
-  from { left: 50px; }
-  50%  { left: 100px; }
-  to  { left: -100px ; }
+  from { left: 0px;}
+  25%  { left: 25px;}
+  50% {  top: 25px;}
+  75% {  right: 25px;}
+  to  {  bottom:25px ;}
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
