@@ -1,6 +1,13 @@
 var joueur = prompt("pierre feuille ou ciseaux?");
 var resultjoueur = "Votre choix :";
 var ordi = Math.random();
+var pointOrdi = 0;
+var pointPlayer = 0;
+var total = pointOrdi && pointPlayer ;
+var n = total ;
+
+
+
 
  
 console.log("ordi num: " + ordi);

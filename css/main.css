@@ -94,25 +94,68 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+/* BACKGROUND */
 body {
-  background-image: url(http://dailygeekshow.com/wp-content/uploads/2015/03/shutterstock_145215868.jpg);
+  background-color:   #2F4F4F;
 }
 
+/* BOUTON PLAY */
+.btn-primary {
+  border-radius: 50px;
+}
 
+/* SECTION IMG PLAYER */
+.img-game {
+  display: flex;
+  justify-content: space-between;
+}
 
+/* THREE IMG PLAYER */
+.pierre1 ,.feuille1, .ciseau1 {
+  width: 10%;
+  height: 10%;
+  position: relative;
+  animation-name: gamer;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;  
+}
 
+/* SECTION IMG VERSUS */
+.animation{
+  display: flex;
+  justify-content: center;
+}
 
+/* IMG VERSUS */
+.versus {
+  width: 25%;
+}
 
+/* SECTION IMG TERMINATOR */
 
+/* IMG TERMINATOR (ORDI) */
+.terminator {
+  width: 10%;
+  position: relative;
+  animation-name: terminator;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+  animation-direction: alternate; 
+}
 
+/* ANIMATION */
+@keyframes gamer {
+  from { left: 50px; }
+  50%  { left: 100px; }
+  to  { left: -100px ; }
+}
 
-
-
-
-
-
-
+@keyframes terminator {
+  from { left: 50px; }
+  50%  { left: 100px; }
+  to  { left: -100px ; }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
