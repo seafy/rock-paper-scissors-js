@@ -1,4 +1,8 @@
-var joueur = prompt("pierre feuille ou ciseaux?");
+function myFunction() {
+var joueur = document.getElementById("play");
+x.disabled = false;
+}
+var joueur = prompt("pierre feuille ou ciseaux?") , ;
 var resultjoueur = "Votre choix :";
 var ordi = Math.random();
 var pointOrdi = 0;
@@ -87,5 +91,3 @@ while (joueur && ordi < 3) {
   i++;
 }
 
-
-  
