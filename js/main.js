@@ -1,14 +1,13 @@
-var btn = document.getElementById("play");
-btn.onclick  = jeu;
-
-function jeu  () {
-
-var joueur = prompt("pierre feuille ou ciseaux?");
-var resultjoueur = "Votre choix :";
+var title = document.getElementById("title").innerHTML = document.title;
+var date = document.getElementById("date").innerHTML =  Date();
+var resultjoueur = "Votre choix :" ;
 var ordi = Math.random();
+var joueur;
+var pfc = "";
+var scoreJoueur = 0;
+var scoreOrdi = 0;
+var vs = " vs ";
 
-
- 
 console.log("ordi num: " + ordi);
 if (ordi < 0.33) {
   ordi = "pierre";
@@ -22,32 +21,42 @@ else {
   ordi = "ciseaux";
 }
 
-alert(resultjoueur + joueur);
-alert("Le choix ordi est :" + ordi);
+// alert(resultjoueur + joueur);
+// alert("Le choix ordi est :" + ordi);
 
 
+// FUNCTION BUTTON 
+function jeu  () {
 
+// CONDITION OF GAME
 
+}
 
-switch (joueur) { 
+function choix(pfc){
+switch (pfc) { 
 
   case "pierre":
     if (ordi == "pierre") {//joueur choisie pierre et ordi :pierre
-      alert("égaliter !");
-      
+      alert(resultjoueur + pfc + vs + ordi) + alert("égalité");
+
     } else if (ordi == "feuille") { //ordi choisie feuille
-      alert("vous avez perdu !");
-    
-    } else {  // ordi choisie ciseaux
-      alert("vous avez gagner !");
-     
+      scoreOrdi++
+      console.log(scoreOrdi); 
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!");
+
+    } else {  // ordi choisie ciseaux 
+      scoreJoueur++
+      console.log(scoreJoueur);
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !");
     }
     break;
  
 
   case "feuille": 
     if (ordi == "pierre") {
-      alert("vous avez gagner !");
+      scoreJoueur++
+      console.log(scoreJoueur);
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !");
       }
     
       // joueur choisie Feuille et ordi : pierre
@@ -58,20 +67,27 @@ switch (joueur) {
       // ordi choisie feuille
     
     else {
-      alert("vous avez perdu !");
+      alert(ordi);
+      scoreOrdi++
+      console.log(scoreOrdi);
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!");
     } 
       // ordi choisit ciseaux
     
     break;
     
-  case "ciseaux":  // joueur choisit : ciseaux
+  case "ciseau":  // joueur choisit : ciseaux
      if (ordi == "pierre") {
-       alert("vous avez perdu !");
+       scoreOrdi++
+       console.log(scoreOrdi);
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!");
      } 
     // ordi choisit pierre
     
      else if (ordi == "feuille") {
-       alert("vous avez gagner !");
+      scoreJoueur++
+      console.log(scoreJoueur);
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !");
      }
     // ordi choisit feuille
     
@@ -79,16 +95,11 @@ switch (joueur) {
        alert("égaliter !");
      }
     // ordi choisit ciseaux
- 
+
    break;
 
  default:
  alert("erreur , veux tu rejouer ?");
 }
-
-while (joueur && ordi < 3) {
-   (joueur) +i;
-  i++;
 }
 
-}
