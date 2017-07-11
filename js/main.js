@@ -4,7 +4,7 @@ var resultjoueur = "Vous avez choisie :" ;
 var ordi = Math.random();
 var joueur;
 var pfc = "";
-var scoreJoueur = 0 + document.getElementById("scoreJoueur").innerHTML;
+var scoreJoueur = 0;
 var scoreOrdi = 0;
 var vs = " vs ";
 
