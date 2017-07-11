@@ -173,19 +173,36 @@ body {
   font-size: 20px;
 }
 
+/* TITLE */
 .ScoreJoueur {
  float: left; 
- margin-left: 25%;
+ margin-left: 15%;
  color: white;
 }
 
+/* TITLE */
 .ScoreOrdi {
  float: right;
- margin-right: 25%;
+ margin-right: 15%;
  color: black;
 }
 
+.THESCORE {
+  display: flex;
+  justify-content: space-between;
+}
 
+/* THESCORE */
+#scoreJoueur {
+ margin-top: 50px;
+ margin-right: 50px; 
+}
+
+/* THESCORE */
+#scoreOrdi {
+ margin-top: 50px;
+ margin-left: 50px; 
+}
 
 
 /* ==========================================================================
