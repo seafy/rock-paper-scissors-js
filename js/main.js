@@ -32,8 +32,8 @@ function jeu  () {
 
 }
 
-function choix(pfc){
-switch (pfc) { 
+function choix(compareChoise){
+switch (compareChoise) { 
 
   case "pierre":
     if (ordi == "pierre") {//joueur choisie pierre et ordi :pierre
@@ -42,12 +42,12 @@ switch (pfc) {
     } else if (ordi == "feuille") { //ordi choisie feuille
       scoreOrdi++
       console.log(scoreOrdi); 
-      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!");
+      alert( (resultjoueur + pfc + vs + ordi ) + ("vous avez perdu!") +(scoreOrdi) );
 
     } else {  // ordi choisie ciseaux 
       scoreJoueur++
       console.log(scoreJoueur);
-      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !");
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !") + alert(scoreJoueur);
     }
     break;
  
@@ -55,8 +55,7 @@ switch (pfc) {
   case "feuille": 
     if (ordi == "pierre") {
       scoreJoueur++
-      console.log(scoreJoueur);
-      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !");
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !") + alert(scoreJoueur);
       }
     
       // joueur choisie Feuille et ordi : pierre
@@ -69,8 +68,7 @@ switch (pfc) {
     else {
       alert(ordi);
       scoreOrdi++
-      console.log(scoreOrdi);
-      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!");
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!") + alert(scoreOrdi);
     } 
       // ordi choisit ciseaux
     
@@ -79,15 +77,14 @@ switch (pfc) {
   case "ciseau":  // joueur choisit : ciseaux
      if (ordi == "pierre") {
        scoreOrdi++
-       console.log(scoreOrdi);
-      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!");
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!") + alert(scoreOrdi);
      } 
     // ordi choisit pierre
     
      else if (ordi == "feuille") {
       scoreJoueur++
       console.log(scoreJoueur);
-      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !");
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !") + alert(scoreJoueur);
      }
     // ordi choisit feuille
     

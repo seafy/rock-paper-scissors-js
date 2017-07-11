@@ -98,6 +98,14 @@ textarea {
 body {
   background-color:   #2F4F4F;
 }
+/* The title */
+.title { 
+ color: white; 
+}
+.date {
+  color: orange;
+  float: right;
+}
 
 /* BOUTON PLAY */
 .btn-primary {
@@ -139,7 +147,7 @@ body {
   width: 10%;
   position: relative;
   animation-name: terminator;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate; 
 }
@@ -153,12 +161,32 @@ body {
 
 @keyframes terminator {
   from { left: 0px;}
-  25%  { left: 25px;}
-  50% {  top: 25px;}
-  75% {  right: 25px;}
-  to  {  bottom:25px ;}
+  to  { left: 25px;}
 }
 
+
+/* section console */
+.console {
+  width: 500px;
+  height: 250px;
+  background-color: grey;
+  opacity: 0.2;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.ScoreJoueur {
+ float: left; 
+ margin-left: 25%;
+ color: white;
+ opacity: 1;
+}
+
+.ScoreOrdi {
+ float: right;
+ margin-right: 25%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
