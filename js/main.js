@@ -39,23 +39,23 @@ switch (compareChoise) {
     if (ordi == "pierre") {//joueur choisie pierre et ordi :pierre
       alert(resultjoueur + pfc + vs + ordi) + alert("égalité");
 
-    } else if (ordi == "feuille") { //ordi choisie feuille
-      scoreOrdi++
-      console.log(scoreOrdi); 
+    } else if (ordi == "feuille") { //ordi choisie feuille 
       alert( (resultjoueur + pfc + vs + ordi ) + ("vous avez perdu!") +(scoreOrdi) );
+      alert(scoreOrdi); 
+      scoreOrdi++
 
     } else {  // ordi choisie ciseaux 
+      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !") ; 
+      alert(scoreJoueur);
       scoreJoueur++
-      console.log(scoreJoueur);
-      alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !") + alert(scoreJoueur);
     }
     break;
  
 
   case "feuille": 
     if (ordi == "pierre") {
-      scoreJoueur++
       alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !") + alert(scoreJoueur);
+      scoreJoueur++
       }
     
       // joueur choisie Feuille et ordi : pierre
@@ -66,9 +66,8 @@ switch (compareChoise) {
       // ordi choisie feuille
     
     else {
-      alert(ordi);
-      scoreOrdi++
       alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!") + alert(scoreOrdi);
+      scoreOrdi++
     } 
       // ordi choisit ciseaux
     
@@ -76,15 +75,16 @@ switch (compareChoise) {
     
   case "ciseau":  // joueur choisit : ciseaux
      if (ordi == "pierre") {
-       scoreOrdi++
       alert(resultjoueur + pfc + vs + ordi) + alert("vous avez perdu!") + alert(scoreOrdi);
+      scoreOrdi++
      } 
     // ordi choisit pierre
     
      else if (ordi == "feuille") {
-      scoreJoueur++
-      console.log(scoreJoueur);
       alert(resultjoueur + pfc + vs + ordi) + alert("vous avez gagné !") + alert(scoreJoueur);
+      alert(scoreJoueur);
+      scoreJoueur++
+
      }
     // ordi choisit feuille
     

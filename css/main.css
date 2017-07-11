@@ -99,12 +99,8 @@ body {
   background-color:   #2F4F4F;
 }
 /* The title */
-.title { 
- color: white; 
-}
-.date {
-  color: orange;
-  float: right;
+.title ,.date{ 
+ color: orange; 
 }
 
 /* BOUTON PLAY */
@@ -170,23 +166,28 @@ body {
   width: 500px;
   height: 250px;
   background-color: grey;
-  opacity: 0.2;
+  /* opacity: 0.2; */
   display: block;
   margin: auto;
   position: relative;
+  font-size: 20px;
 }
 
 .ScoreJoueur {
  float: left; 
  margin-left: 25%;
  color: white;
- opacity: 1;
 }
 
 .ScoreOrdi {
  float: right;
  margin-right: 25%;
+ color: black;
 }
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
